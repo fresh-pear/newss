@@ -13,6 +13,7 @@
     "react-scripts": "5.0.1",
     "toolkit": "^1.5.4"
   },
+  "homepage": "https://fresh-pear.github.io/newss",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -40,7 +41,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "web-vitals": "^4.2.4"
   },
   "homepage": "https://<your-username>.github.io/<your-repository-name>"
 }
