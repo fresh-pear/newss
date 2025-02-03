@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.wrap {
+  min-height: 500px;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.wrap_i {
+  max-width: 1800px;
+  max-height: 900px;
+  min-height: 900px;
+  background-color: rgb(212, 212, 212);
+  border-radius: 10px;
+  border: 1px solid rgb(173, 173, 173);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.356);
+  padding: 16px;
+  overflow: scroll;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+.wrap_i::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.wrap_i::-webkit-scrollbar-track {
+  background: (173, 173, 173);
+}
+
+.wrap_i::-webkit-scrollbar-thumb {
+  background: #9b9b9b;
+  border-radius: 10px;
+}
+
+.wrap_i::-webkit-scrollbar-thumb:hover {
+  background: rgb(173, 173, 173);
+}
+
+.header {
+  width: 90%;
+  height: 30px;
+  margin: auto;
+  background-color: rgb(241, 241, 241);
+  border-radius: 5px;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header h1 {
+  font-size: 1.5rem;
+}
+
+.allbox {
+  min-height: 500px;
+  margin-top: 120px;
+}
+
+.box img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 16px;
+  margin: 12px;
+  min-height: 300px;
+}
+
+.loading {
+  width: 100%;
+  text-align: center;
+  margin-top: 250px;
+  height: 100%;
+  font-size: 2rem;
+  color: #333;
+}
+
+.art_t {
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  padding: 12px 0;
+}
+
+.newsitem {
+  height: 650px;
+}
+
+.m_button {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.button_i {
+  display: flex;
+  gap: 12px;
+  margin: 12px 0;
+  flex-wrap: wrap;
+}
+
+.m_button button {
+  width: 100px;
+  padding: 0 8px;
+}
+
+.more_b {
+  width: 120px;
+  height: 20px;
+  background-color: rgb(185, 185, 185);
+  color: aliceblue;
+  padding: 0 20px;
+  align-items: center;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.contents h2{
+  margin-top: 12px;
+font-size: 1.2rem;
+}
+
+@media (max-width:600px) {
+  .allbox {
+    margin-top: 120px;
+  }
+
+  .button_i {
+    justify-content: space-evenly;
+  }
+
+  .header {
+    position: static;
+    transform: none;
+    margin: auto;
+  }
+
+  .allbox {
+    margin-top: 150px;
+  }
+
+}
+
+@media (max-width:400px) {
+  .allbox {
+    margin-top: 180px;
+  }
+
+  .box {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+
+}
